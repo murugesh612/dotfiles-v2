@@ -1,0 +1,112 @@
+configuration {
+    font: "Ubuntu Nerd Font 12";
+    modes: [combi];
+    combi-modes: [window, drun, run];
+}
+
+* {
+    base: #1e1e2e;
+    mantle: #181825;
+    crust: #11111b;
+    text: #cdd6f4;
+    subtext1: #bac2de;
+    subtext0: #a6adc8;
+    rosewater: #f5e0dc;
+    flamingo: #f2cdcd;
+    pink: #f5c2e7;
+    mauve: #cba6f7;
+    red: #f38ba8;
+    maroon: #eba0ac;
+    peach: #fab387;
+    yellow: #f9e2af;
+    green: #a6e3a1;
+    teal: #94e2d5;
+    blue: #89b4fa;
+    sky: #74c7ec;
+    lavender: #b4befe;
+    surface0: #313244;
+    surface1: #45475a;
+    surface2: #585b70;
+    overlay0: #6c7086;
+    overlay1: #7f849c;
+    overlay2: #9399b2;
+
+    background-color: @base;
+}
+
+window {
+    margin: 0px;
+    padding: 0px;
+    height: 400;
+    width: 500;
+
+    border: 2 2 2 2;
+    border-color: @lavender;
+    border-radius: 10px;
+    background-color: @base;
+}
+
+mainbox {
+    spacing: 0;
+    border-radius: 8px;
+    children: [inputbar, message, listview];
+}
+
+inputbar {
+    color: @text;
+    padding: 14;
+    background-color: @base;
+}
+
+message {
+    padding: 10;
+    background-color: @overlay0;
+}
+
+listview {
+    padding: 8;
+    border-radius: 0 0 10 10;
+    border: 2 2 2 2;
+    border-color: @base;
+    background-color: @base;
+    dynamic: false;
+}
+
+textbox {
+    text-color: @text;
+    background-color: inherit;
+}
+
+error-message {
+    border: 20 20 20 20;
+}
+
+entry, prompt, case-indicator {
+    text-color: inherit;
+}
+
+prompt {
+    margin: 0 10 0 0;
+}
+
+element {
+    padding: 10px;
+    spacing: 5px;
+    cursor: pointer;
+    border-radius: 10;
+}
+
+element selected.normal {
+    background-color: @red;
+    color: @surface0;
+}
+
+element normal.normal {
+    background-color: @base;
+    color: @text;
+}
+
+element alternate.normal {
+    background-color: @base;
+    color: @text;
+}

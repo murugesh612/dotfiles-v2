@@ -1,0 +1,6 @@
+*.zsh_history
+*.zshalias
+*.zcompdump-*
+
+*venv
+wallpapers

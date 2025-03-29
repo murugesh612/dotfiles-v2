@@ -1,0 +1,13 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config: .hypr-config
+    ~/.local/bin: scripts/.local/bin
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.vimrc: vim/.vimrc
+    ~/.zshenv: zsh/.zshenv
+    ~/.config/zsh: zsh/zsh
