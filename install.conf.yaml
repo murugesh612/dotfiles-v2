@@ -5,9 +5,16 @@
 - clean: ['~']
 
 - link:
-    ~/.config: .hypr-config
+    ~/.config/alacritty: .hypr-config/alacritty
+    ~/.config/hypr: .hypr-config/hypr
+    ~/.config/kitty: .hypr-config/kitty
+    ~/.config/nvim: .hypr-config/nvim
+    ~/.config/ranger: .hypr-config/ranger
+    ~/.config/rofi: .hypr-config/rofi
+    ~/.config/swaync: .hypr-config/swaync
+    ~/.config/waybar: .hypr-config/waybar
     ~/.local/bin: scripts/.local/bin
-    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux.conf: tmux/.tmux.conf
     ~/.vimrc: vim/.vimrc
     ~/.zshenv: zsh/.zshenv
     ~/.config/zsh: zsh/zsh
