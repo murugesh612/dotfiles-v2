@@ -1,11 +1,12 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 30,
+  "height": 28,
   "spacing": 2,
-  "margin-top": 8,
-  "margin-left": 4, 
-  "margin-bottom": 0,
+  "margin-top": 6,
+  "margin-left": 8,
+  "margin-right": 8,
+  "margin-bottom": -4,
   "modules-left": [
     "hyprland/workspaces",
     "hyprland/mode",
@@ -16,8 +17,6 @@
   "modules-center": ["clock"],
   "modules-right": [
     "mpd",
-    "idle_inhibitor",
-    "temperature",
     "cpu",
     "memory",
     "network",
@@ -32,23 +31,21 @@
   "hyprland/window": {
     "format": "  {title}"
   },
+
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
     "persistent": true,
-    "format": "{name}: {icon}",
+    "format": "{icon}",
     "numbers": [1, 2, 3, 4, 5],
     "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
+      // "active": "",
+      "active": "",
       "urgent": "",
-      "focused": "",
-      "default": ""
-    }
+      "default": ""
+    },
+    "on-click": "activate",
   },
   "keyboard-state": {
     "numlock": true,
@@ -110,7 +107,7 @@
   },
   "clock": {
     "format": "󰥔 {:%H:%M}",
-    "on-click": "kitty --class calcurse -e calcurse",
+    // "on-click": "kitty --class calcurse -e calcurse",
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
       "mode": "month",
@@ -199,7 +196,7 @@
     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   },
   "custom/powermenu": {
-    "tooltip":"Power Menu",
+    "tooltip": "Power Menu",
     "format": "",
     "on-click": "$HOME/.local/bin/rofi/powermenu.sh"
   }
