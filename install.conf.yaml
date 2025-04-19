@@ -5,14 +5,15 @@
 - clean: ['~']
 
 - link:
-    ~/.config/alacritty: .hypr-config/alacritty
-    ~/.config/hypr: .hypr-config/hypr
-    ~/.config/kitty: .hypr-config/kitty
-    ~/.config/nvim: .hypr-config/nvim
-    ~/.config/ranger: .hypr-config/ranger
-    ~/.config/rofi: .hypr-config/rofi
-    ~/.config/swaync: .hypr-config/swaync
-    ~/.config/waybar: .hypr-config/waybar
+    ~/.config/alacritty: hypr-config/alacritty
+    ~/.config/hypr: hypr-config/hypr
+    ~/.config/kitty: hypr-config/kitty
+    ~/.config/nvim: hypr-config/nvim
+    ~/.config/ranger: hypr-config/ranger
+    ~/.config/rofi: hypr-config/rofi
+    ~/.config/swaync: hypr-config/swaync
+    ~/.config/waybar: hypr-config/waybar
+    ~/.config/eww: hypr-config/eww
     ~/.local/bin: scripts/.local/bin
     ~/.tmux.conf: tmux/.tmux.conf
     ~/.vimrc: vim/.vimrc
